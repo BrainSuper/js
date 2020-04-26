@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "ProximaNovaThin";
+    src: url("../fonts/Proxima/ProximaNovaThin.otf");
+    src: url("../fonts/Proxima/ProximaNovaThin.otf?#iefix")format("embedded-opentype"),
+  
+  }
+  /* font-family: "ProximaNovaLight"; */
+  @font-face {
+    font-family: "ProximaNovaLight";
+    src: url("../fonts/Proxima/ProximaNovaLight.otf");
+    src: url("../fonts/Proxima/ProximaNovaLight.otf?#iefix")format("embedded-opentype"),
+  
+  }
+  
+  /* font-family: "ProximaNovaRegular"; */
+  @font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/Proxima/ProximaNovaRegular.otf");
+    src: url("../fonts/Proxima/ProximaNovaRegular.otf?#iefix")format("embedded-opentype"),
+  }
+  
+  /* font-family: "ProximaNovaBold"; */
+  @font-face {
+    font-family: "ProximaNovaBold";
+    src: url("../fonts/Proxima/ProximaNovaBold.otf");
+    src: url("../fonts/Proxima/ProximaNovaBold.otf?#iefix")format("embedded-opentype"),
+  }
+  
+  /* font-family: "ProximaNovaBlack"; */
+  @font-face {
+    font-family: "ProximaNovaBlack";
+    src: url("../fonts/Proxima/ProximaNovaBold.otf");
+    src: url("../fonts/Proxima/ProximaNovaBold.otf?#iefix")format("embedded-opentype"),
+  
+  }
+  /* font-family: "ProximaNovaExtrabold"; */
+  @font-face {
+    font-family: "ProximaNovaExtrabold";
+    src: url("../fonts/Proxima/ProximaNovaExtrabold.otf");
+    src: url("../fonts/Proxima/ProximaNovaExtrabold.otf?#iefix")format("embedded-opentype"),
+  }
+  /* font-family: "ProximaNovaSemibold"; */
+  @font-face {
+    font-family: "ProximaNovaSemibold";
+    src: url("../fonts/Proxima/ProximaNovaSemibold.otf");
+    src: url("../fonts/Proxima/ProximaNovaSemibold.otf?#iefix")format("embedded-opentype"),
+  }
+  /* font-family: "AvenirNextCondensed"; */
+  @font-face {
+    font-family: "Avenir";
+    src: url("../fonts/avenir_next_condensed.ttf");
+  }
+  @font-face {
+    font-family: "ProximaNovaSoft-Semibold";
+    src: url("../fonts/ProximaNovaSoft/ProximaNovaSoft-Semibold.otf");
+  }
+  @font-face {
+    font-family: "ProximaNovaSoft-Semibold";
+    src: url("../fonts/ProximaNovaSoft/ProximaNovaSoft-Regular.otf");
+  }
