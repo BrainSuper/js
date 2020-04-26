@@ -93,6 +93,8 @@
                     list-style-type: none
                     padding: 0
                     border-top: none
+                    position: absolute
+                    top: 100%
                     .catalog__mobile__tab
                         a
                             padding-left: 47px
@@ -178,15 +180,25 @@
             flex-wrap: wrap
             &_none
                 display: none
-@media screen and ( max-width:  700px)
+@media screen and ( max-width:  320px)
     .catalog
         &__tabs
             display: none
         &__mobile
             &__menu
                 &_open
+                    position: relative
                     display: flex
                 display: flex
+                    
+            &__tab
+              
+        &__subtitle
+            width: 100%
+        &__wrapper
+            flex-direction: column
+            align-items: flex-start
+            
     
 
        
