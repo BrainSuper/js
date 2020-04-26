@@ -28,120 +28,119 @@
         font-weight: bold
         color: #393939
         margin-right: 15px
+        // desk
     &__tabs
-        display: none
-        width: 184px
         margin: 0
-        border-top: none
-        height: 144px
-        border: solid 1px #ff4880
-        background-color: #ffffff
+        padding: 0
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+    
     &__tab
-        width: 100%
-        border-radius: 0
-        background-color: #ffffff
-        border: none
-        height: 34px
-        // a
-        //     font-size: 16px
-        //     font-weight: 600
-        //     color: #979797
-        //     text-decoration: none
-        
-
-
+        width: 120px
+        height: 25px
+        margin: 0 9px
+        border-radius: 28px
+        border: solid 1px #979797
+        font-family: ProximaNovaRegular, Arial, sans-serif
+        font-size: 16px
+        color: #979797
+        text-align: center
+        line-height: 25px
+        &:hover
+            cursor: pointer
+        &_active
             
-    &__menu
-        &_open
-            .catalog__tabs
-                display: flex
-                flex-direction: column
-                list-style-type: none
-                padding: 0
-                border-top: none
-                border-radius: 0 0 5px 5px
-                .catalog__tab
-                    a
-                        padding-left: 47px
-                        font-family: ProximaNovaRegular, Arial, sans-serif
-                        font-size: 16px
-                        line-height: 34px
-                        cursor: pointer
-                        background: #ffffff
-                        color: #979797
-                        text-decoration: none
-                        font-weight: bold
-                    &_active
+            border: solid 1px #ff4880
+            color: #ff4880
+            span
+                position: relative
+                &::before
+                    position: absolute
+                    content: url(../icons/active.svg)
+                    right: 105%
+                    // 
+    &__mobile
+        display: none
+        &__tabs
+            display: none
+            width: 184px
+            margin: 0
+            border-top: none
+            border: solid 1px #ff4880
+            border-bottom: none
+            border-radius: 0 0 5px 5px
+            background-color: #ffffff
+        &__tab
+            width: 100%
+            border-radius: 0
+            background-color: #ffffff
+            border: none
+            height: 34px
+            &:last-child
+                border-bottom: solid 1px #ff4880
+                border-radius: 0 0 5px 5px    
+    &__mobile
+        &__menu
+            &_open
+                display: none
+                .catalog__mobile__tabs
+                    display: flex
+                    flex-direction: column
+                    list-style-type: none
+                    padding: 0
+                    border-top: none
+                    .catalog__mobile__tab
                         a
-                            position: relative
-                            &::before
-                                position: absolute
-                                content: url(../icons/active.svg)
-                                left: 19px
-                                                
-                
+                            padding-left: 47px
+                            font-family: ProximaNovaRegular, Arial, sans-serif
+                            font-size: 16px
+                            line-height: 34px
+                            cursor: pointer
+                            background: #ffffff
+                            color: #979797
+                            text-decoration: none
+                            font-weight: bold
+                        &_active
+                            a
+                                position: relative
+                                color: #ff4880
+                                &::before
+                                    position: absolute
+                                    content: url(../icons/active.svg)
+                                    left: 19px
+                .catalog__mobile__menu_title
+                    padding-left: 47px
+                    font-family: ProximaNovaRegular, Arial, sans-serif
+                    font-size: 16px
+                    line-height: 20px
+                    cursor: pointer
+                    background: #ffffff
+                    color: #ff4880 
+                    font-weight: bold
 
-
-            .catalog__menu_title
-                padding-left: 47px
+            &_title
+                display: block
+                width: 184px
+                position: relative
+                height: 34px
+                border-radius: 5px 5px 0 0
+                border: solid 1px #ff4880
+                padding: 10px 101px  10px 47px
                 font-family: ProximaNovaRegular, Arial, sans-serif
                 font-size: 16px
                 line-height: 20px
                 cursor: pointer
                 background: #ffffff
-                color: #ff4880 
+                color: #ff4880
                 font-weight: bold;
+                &::before
+                    position: absolute
+                    content: url(../icons/active.svg)
+                    left: 19px
 
-        &_title
-            display: block
-            width: 184px
-            position: relative
-            height: 34px
-            border-radius: 5px 5px 0 0
-            border: solid 1px #ff4880
-            padding: 10px 101px  10px 47px
-            font-family: ProximaNovaRegular, Arial, sans-serif
-            font-size: 16px
-            line-height: 20px
-            cursor: pointer
-            background: #ffffff
-            color: #ff4880
-            font-weight: bold;
-            &::before
-                position: absolute
-                content: url(../icons/active.svg)
-                left: 19px
-    // &__tabs
-    //     margin: 0
-    //     padding: 0
-    //     list-style-type: none
-    //     display: flex
-    //     justify-content: center
-    //     align-items: center
     
-    // &__tab
-    //     width: 120px
-    //     height: 25px
-    //     margin: 0 9px
-    //     border-radius: 28px
-    //     border: solid 1px #979797
-    //     font-family: ProximaNovaRegular, Arial, sans-serif
-    //     font-size: 16px
-    //     color: #979797
-    //     text-align: center
-    //     line-height: 25px
-    //     &:hover
-    //         cursor: pointer
-    //     &_active
-            
-    //         border: solid 1px #ff4880
-    //         color: #ff4880
-    //         span
-    //             position: relative
-    //             &::before
-    //                 position: absolute
-    //                 content: url(../icons/active.svg)
-    //                 right: 105%
             
     &__content
         margin-top: 39px
@@ -177,9 +176,15 @@
             flex-wrap: wrap
             &_none
                 display: none
+@media screen and ( max-width:  700px)
+    .catalog
+        &__tabs
+            display: none
+        &__mobile
+            &__menu
+                &_open
+                    display: flex
+                display: flex
+    
 
-
-    
-        
-    
-    
+       
