@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <div id="gallery">
+        <div class="container content-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="data-filter data_filter_js">
+                        <ul>
+                            <li class="active" id="active" data-filter="*">Clear filter</li>
+                            <li data-filter=".size">Size</li>
+                            <li data-filter=".type">Type</li>
+                            <li data-filter=".wedding">Wedding</li>
+                            <li data-filter=".corporate">Corporate</li>
+                            <li data-filter=".birthdays">Birthdays</li>
+                            <li data-filter=".parties">Parties</li>
+                        </ul>
+                    </div>
+                    <!-- <div id="catalog__menu" class="data-filter catalog__mobile__menu">
+                        <span class="catalog__mobile__menu_title">Clear filter</span>
+                        <ul class="catalog__mobile__tabs">
+                            <li class="catalog__mobile__tab catalog__mobile__tab_active" data-filter="*"><a
+                                    href="#">Clear filter</a></li>
+                            <li data-filter=".size" class="catalog__mobile__tab"><a href="#">Size</a></li>
+                            <li data-filter=".type" class="catalog__mobile__tab"><a href="#">Type</a></li>
+                            <li data-filter=".wedding" class="catalog__mobile__tab"><a href="#">wedding</a></li>
+                            <li data-filter=".corporate" class="catalog__mobile__tab"><a href="#">Corporate</a></li>
+                            <li data-filter=".birthdays" class="catalog__mobile__tab"><a href="#">Birthdays</a></li>
+                            <li data-filter=".parties" class="catalog__mobile__tab"><a href="#">Parties</a></li>
+                        </ul>
+                    </div> -->
+                    <!-- ------------------------------- -->
+                    <div id="catalog__menu" class="data_filter_js catalog__mobile__menu">
+                        <span class="catalog__mobile__menu_title">lol</span>
+                        <ul class="catalog__mobile__tabs">
+                            <li data-filter=".size" class="catalog__mobile__tab catalog__mobile__tab_active"><a
+                                    href="#">noo</a></li>
+                            <li data-filter=".type" class="catalog__mobile__tab"><a href="#">njij</a></li>
+                            <li data-filter=".wedding" class="catalog__mobile__tab"><a href="#">lokju</a></li>
+                        </ul>
+                    </div>
+                    <!-- ---------------------------------->
+
+                    <!-- ------------------------------------>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="item size tab_select" id="test_hide0">
+                    <img src="img/card-1.jpg" alt="">
+                </div>
+                <div class="item type tab_select none" id="test_hide1">
+                    <img src="img/card-2.jpg" alt="">
+                </div>
+                <div class="item wedding tab_select none" id="test_hide2">
+                    <img src="img/card-3.jpg" alt="">
+                </div>
+                <div class="item corporate tab_select none" id="test_hide3">
+                    <img src="img/card-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="isotope.pkgd.min.js"></script>
+    <script src="gallery.js"></script>
+</body>
+
+</html>

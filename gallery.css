@@ -1,0 +1,66 @@
+.data-filter{
+    padding: 15px 0;
+}
+.data-filter ul{
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+.data-filter ul li{
+    display: inline-block;
+    margin: 7px;
+    background: none;
+    border: 1px solid #979797;
+    border-radius: 20px;
+    /* width: 120px; */
+    /* height: 25px; */
+    padding: 5px 10px;
+    min-width: 40px;
+    cursor: pointer;
+    text-align: center;
+    color: #979797;
+    transition: 0,3s ease-in;
+    font-size: 16px;
+}
+.data-filter ul li:hover{
+    border-color: #ff4880;
+    color: #ff4880;
+}
+li.active{
+    border-color: #ff4880;
+    color: #ff4880;
+}
+.portfolio-item{
+    max-width: 920px;
+    margin: 0px auto;
+}
+.portfolio-item .item{
+    max-width: 440px;
+    float: left;
+    margin: 10px;
+}
+.portfolio-item .item img{
+    width: 100%;
+}
+/* //////////// */
+@media(max-width:992px){
+    .portfolio-item{
+        max-width: 560px;
+    }
+    .portfolio-item .item{
+        max-width: 550px;
+    }
+    
+}
+/* ================= */
+.catalog__mobile{display:none}.catalog__mobile__tabs{display:none;width:184px;margin:0;border-top:none;border:solid 1px #ff4880;border-bottom:none;border-radius:0 0 5px 5px;background-color:#fff}.catalog__mobile__tab{width:100%;border-radius:0;background-color:#fff;border:none;height:34px}.catalog__mobile__tab:last-child{border-bottom:solid 1px #ff4880;border-radius:0 0 5px 5px}.catalog__mobile__menu{display:none;flex-direction:column}.catalog__mobile__menu_open{display:none}.catalog__mobile__menu_open .catalog__mobile__tabs{display:flex;flex-direction:column;list-style-type:none;padding:0;border-top:none;position:absolute;top:100%}.catalog__mobile__menu_open .catalog__mobile__tabs .catalog__mobile__tab a{padding-left:47px;font-family:ProximaNovaRegular,Arial,sans-serif;font-size:16px;line-height:34px;cursor:pointer;background:#fff;color:#979797;text-decoration:none;font-weight:700}.catalog__mobile__menu_open .catalog__mobile__tabs .catalog__mobile__tab_active a{position:relative;color:#ff4880}.catalog__mobile__menu_open .catalog__mobile__tabs .catalog__mobile__tab_active a::before{position:absolute;content:url(../icons/active.svg);left:19px}.catalog__mobile__menu_open .catalog__mobile__menu_title{padding-left:47px;font-family:ProximaNovaRegular,Arial,sans-serif;font-size:16px;line-height:20px;cursor:pointer;background:#fff;color:#ff4880;font-weight:700}.catalog__mobile__menu_title{display:block;width:184px;position:relative;height:34px;border-radius:5px 5px 0 0;border:solid 1px #ff4880;padding:10px 101px 10px 47px;font-family:ProximaNovaRegular,Arial,sans-serif;font-size:16px;line-height:20px;cursor:pointer;background:#fff;color:#ff4880;font-weight:700}.catalog__mobile__menu_title::before{position:absolute;content:url(../icons/active.svg);left:19px}
+
+
+@media screen and (max-width:768px){.catalog__tabs{display:none}.catalog__mobile__menu{display:flex;z-index:10;}.catalog__mobile__menu_open{position:relative;display:flex}.catalog__subtitle{width:100%}.catalog__wrapper{flex-direction:column;align-items:flex-start}}@media screen and (max-width:768px){
+    /* .container{width:320px;margin:0 auto} */
+}
+/* -------------- */
+.cliked{
+    color: red;
+}
